@@ -1,0 +1,133 @@
+.input-radio {
+  display: flex;
+  height: 3rem;
+  background-color: var(--input-base);
+  border-radius: .5rem;
+  border: 1px solid var(--input-stroke);
+  padding-inline: .15rem;
+  padding-right: .25rem;
+}
+
+.radio-inner {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.60rem;
+  width: 100%;
+  gap: .75rem;
+  border-radius: .5rem;
+
+  & label {
+    margin-bottom: 0;
+  }
+
+  & input[type="radio"] {
+    display: none;
+
+  }
+
+  & span {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  &:hover, &:focus {
+    outline: 2px solid var(--brand-light);
+  }
+}
+
+input[type=radio] {
+  all: unset;
+
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+
+  & .radio-inner {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--shape-button);
+
+    }
+
+    
+
+    & .bg-color {
+      height: 1.75rem;
+      width: 1.75rem;
+      border-radius: 50%;
+
+  }
+
+}
+
+.bg-blue {
+  background-color: blue;
+}
+.bg-navy {
+  background-color: var(--color-navy);
+}
+.bg-purple {
+  background-color: var(--color-purple);
+}
+.bg-fuschia {
+  background-color: var(--color-fuschia);
+}
+.bg-pink {
+  background-color: var(--color-pink);
+}
+.bg-danger {
+  background-color: var(--danger);
+}
+.bg-orange {
+  background-color: var(--color-orange);
+}
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+.bg-lime {
+  background-color: var(--color-lime);
+}
+.bg-green {
+  background-color: var(--color-green);
+}
+.bg-cyan {
+  background-color: var(--color-cyan);
+}
+
+.tema-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+  
+  & span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: var(--body-sm);
+  }
+  
+  & .tema-inner {
+    padding: .3rem .3rem;
+    border-radius: .5rem;
+    max-width: auto;
+    max-height: 6.2rem;
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
+
+    & img {
+      max-height: auto;
+      border-radius: .25rem;
+    }
+
+    &:hover, &:focus {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+}

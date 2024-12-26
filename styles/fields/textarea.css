@@ -1,0 +1,14 @@
+.descricao-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+
+  font: var(--body-md);
+
+}

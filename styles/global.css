@@ -1,0 +1,130 @@
+@import url(./fields/index.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
+
+  --color-purple:#B259FF;
+  --color-fuschia:#FF59F9;
+  --color-pink:#FF598B;
+  --color-orange:#FF8B59;
+  --color-yellow:#FFCD59;
+  --color-lime:#E1FF59;
+  --color-green:#59FF91;
+  --color-cyan:#59FFF9;
+  --color-navy:#6A59FF;
+
+  --danger: #FF5959;
+
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+
+
+  --ff-baloo: "Baloo 2", serif;
+  --heading-md: 700 1.75rem var(--ff-baloo);
+  --heading-sm: 700 1.12rem var(--ff-baloo);
+
+  --ff-open-sans: "Open Sans", serif;
+  --body-md: 400 1rem var(--ff-open-sans);
+  --body-sm: 300 0.9rem var(--ff-open-sans);
+  --body-xs: 500 0.75rem var(--ff-open-sans);
+}
+
+body {
+  background-color: #1E1E1E;
+}
+
+aside {
+  overflow: hidden;
+}
+
+ img {
+  width: 100%;
+ }
+
+ .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+ }
+
+ .input-wrapper {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  & input {
+    font: var(--body-md);
+  }  
+
+  & input[type="date"] {
+    text-transform: uppercase;
+
+  }  
+ }
+
+ .flex-column {
+  display: flex;
+  flex-direction: column;
+ }
+
+ legend {
+  font: var(--heading-sm);
+  color: var(--heading-md);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+ }
+
+.error {
+  display: flex;
+  gap: .5rem;
+  color: var(--danger);
+  font: var(--body-xs);
+  margin-top: .5rem;
+}
+
+.submit-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  all: unset;
+  height: 3rem;
+  width: 11rem;
+  background-color: var(--brand-dark);
+  border-radius: .5rem;
+  font: var(--body-md);
+
+  & .submit-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+
+  }
+  &:hover {
+    outline: 2px solid var(--brand-light);
+  }
+}
+
+
+
